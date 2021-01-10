@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.po-chip {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.po-chip-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 0 3em;
+}
+
+.po-chip-notch {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  top: -1px;
+  align-self: center;
+  border-radius: 2em;
+  margin-top: -1em;
+}
+
+.po-chip-name {
+  align-self: center;
+}
+
+.po-side-left, .po-side-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex: 0 1;
+  row-gap: 1em;
+  padding: 3em 0;
+}
+
+.po-pin {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 -6px;
+  position: relative;
+}
+
+.po-pin-label {
+  position: absolute;
+  width: 128px;
+}
+
+.po-side-left .po-pin-label {
+  right: calc(2em + 6px);
+  text-align: right;
+}
+
+.po-side-right .po-pin-label {
+  left: calc(2em + 6px);
+  text-align: left;
+}
+
+.po-side-left .po-pin-in:before, .po-side-right .po-pin-out:after {
+  content: " → ";
+}
+
+.po-side-left .po-pin-out:before, .po-side-right .po-pin-in:after {
+  content: " ← ";
+}
+
+.po-side-left .po-pin-inout:before, .po-side-right .po-pin-inout:after {
+  content: " ↔ ";
+}
+
+.po-pin-number {
+  padding: 0 4px;
+  flex: 1;
+  text-align: center;
+}

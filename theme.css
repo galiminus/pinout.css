@@ -1,0 +1,25 @@
+.po-chip {
+  background-color:#eee;
+  font-family: monospace;
+  border: 1px solid #ccc;
+}
+
+.po-chip-notch {
+  border-bottom: 1px solid #aaa;
+  background-color: #333;
+}
+
+.po-chip-name {
+  font-weight: bold;
+}
+.po-pin {
+  color: white;
+}
+
+.po-pin-label {
+  color: black;
+}
+
+.po-pin-number {
+  background-color: #333;
+}
